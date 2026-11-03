@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chandana BR - Portfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        /* Header */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 40px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #5145cd;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #5145cd;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            text-align: center;
+            padding: 95px 20px;
+            background: linear-gradient(135deg, #39318f, #8875ef);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 28px;
+            color: #eeeaff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: white;
+            color: #5145cd;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e8e3ff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Common Section */
+
+        .content-section {
+            padding: 50px 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .content-section h2 {
+            font-size: 25px;
+            color: #5145cd;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* Services */
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-box {
+            padding: 28px 22px;
+            background: #f7f6ff;
+            border-radius: 12px;
+            border: 1px solid #e6e2ff;
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 20px rgba(81,69,205,0.15);
+            border-color: #a69aef;
+        }
+
+        .service-box h3 {
+            color: #5145cd;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .service-box p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* About */
+
+        .about {
+            background: #fcfbff;
+        }
+
+        .about p {
+            font-size: 16px;
+            color: #555;
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.9;
+        }
+
+        /* Contact */
+
+        .contact-details {
+            background: #f7f6ff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            max-width: 650px;
+            margin: auto;
+            border: 1px solid #e6e2ff;
+        }
+
+        .contact-details p {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .contact-details p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-details strong {
+            color: #5145cd;
+            display: inline-block;
+            width: 90px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #24213d;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 14px;
+        }
+
+        footer p {
+            color: #ddd8f5;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 650px) {
+
+            .container {
+                width: 95%;
+                margin: 15px auto;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 18px;
+                padding: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 65px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                padding: 35px 20px;
+            }
+
+            .contact-details {
+                padding: 20px 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header>
+
+            <div class="logo">CHANDANA.</div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <!-- Hero Section -->
+
+        <section class="hero" id="home">
+
+            <h1>CHANDANA BR</h1>
+
+            <p>B.Tech Computer Science Engineering Student</p>
+
+            <a href="#about" class="btn">
+                Explore My Profile
+            </a>
+
+        </section>
+
+
+        <!-- Main Content -->
+
+        <main>
+
+            <!-- Services Section -->
+
+            <section id="services" class="content-section">
+
+                <h2>MY SERVICES</h2>
+
+                <div class="services">
+
+                    <article class="service-box">
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            Building responsive, modern and user-friendly
+                            websites using HTML, CSS and JavaScript.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-box">
+
+                        <h3>Programming & Logic</h3>
+
+                        <p>
+                            Solving coding problems and developing
+                            efficient algorithms using Python, C++ and Java.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-box">
+
+                        <h3>UI/UX Design</h3>
+
+                        <p>
+                            Creating attractive layouts, prototypes
+                            and user-friendly web interfaces.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- About Section -->
+
+            <section id="about" class="content-section about">
+
+                <h2>ABOUT ME</h2>
+
+                <p>
+                    I am a passionate Computer Science and Engineering
+                    student interested in software development,
+                    programming and problem solving. I enjoy learning
+                    new technologies and improving my technical skills.
+                    My goal is to become a successful software developer
+                    and build useful digital solutions.
+                </p>
+
+            </section>
+
+
+            <!-- Contact Section -->
+
+            <section id="contact" class="content-section">
+
+                <h2>CONTACT ME</h2>
+
+                <aside class="contact-details">
+
+                    <p>
+                        <strong>Email:</strong>
+                        chandana.br@example.com
+                    </p>
+
+                    <p>
+                        <strong>Phone:</strong>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Karnataka, India
+                    </p>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>© 2026 Chandana BR | All Rights Reserved</p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
