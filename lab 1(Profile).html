@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandana BR - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+
+        /* Header / Navbar Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 2px solid #000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            border: 1px solid #000;
+            padding: 8px 15px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 2px solid #000;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #000;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px;
+            border-bottom: 2px solid #000;
+        }
+
+        .services h2 {
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 40px;
+            border-bottom: 2px solid #000;
+        }
+
+        .about-us h2 {
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 16px;
+            color: #444;
+            max-width: 900px;
+        }
+
+        /* Contact Us Section */
+        .contact-us {
+            padding: 40px;
+        }
+
+        .contact-us h2 {
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .contact-info p strong {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">LOGO</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>CHANDANA BR</h1>
+            <p>CSE Student</p>
+            <a href="#services" class="btn">GET STARTED</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>OUR SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern, and user-friendly websites using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Programming & Logic</h3>
+                    <p>Solving complex coding problems and developing efficient algorithms in Python, C++, and Java.</p>
+                </div>
+                <div class="service-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating wireframes, prototypes, and clean interface designs for web and mobile applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-us">
+            <h2>ABOUT US</h2>
+            <p>I am a passionate Computer Science and Engineering student dedicated to software development, problem solving, and modern web applications. With a strong foundation in core computer science principles and technical skills, I continuously strive to learn new technologies and build impactful digital experiences.</p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-us">
+            <h2>CONTACT US</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> chandana.br@example.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Location:</strong> Karnataka, India</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
